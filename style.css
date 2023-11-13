@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  margin-top: 40px;
+    text-align: center;
+    size: 1.5em;
+    background-color: azure;
+} 
+body {
+  line-height: 50px;
+}
+h1 {
+ color: brown;
+}
+h2 {
+    color: blue;
+}
+p .cd-link {
+  text-decoration: none;
+}
