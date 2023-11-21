@@ -3,13 +3,14 @@
 <html>
     <head>
         <title>Andrew Cloer's Portfolio</title>
+      
         <style>
             body {background-color: rgb(255, 255, 255);}
             h1 {color: rgb(12, 25, 36);}
             p {color: rgb(12, 25, 36);}
         </style>
     </head>
-
+ 
     <body>
         <h1>About</h1>
             <p>
@@ -30,6 +31,23 @@
         <h1>Connect</h1>
             <p>My email is andrbee1234@gmail.com</p>
              <p>My GitHub account name is AndrewCloer</p>
+                <section>
+                    <h2>Leave a Message</h2>
+                    <form action="index.html" id="messageBoard" method="post" name="leave_message"><br>
+                        <label for="userName">Your user name</label><br>
+                        <input type="text" id="userName" name="userName" required><br>
+                        <label for="userEmail">Your email</label><br>
+                        <input type="email" id="userEmail" name="userEmail" required><br>
+                        <label for="userMessage">Your message</label><br>
+                        <textarea name="usersMessage" id="userMessage" required></textarea><br>
+                        <label for="SubmitButton">Submit:</label><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+                <section id="messages">
+                    <h2>Messages</h2>
+                        <ul id="responses"> </ul>
+                </section>
                 <footer></footer>
              <script src="js/index.js"></script>
         </body>
