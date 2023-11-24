@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: center;
+  text-align: center;
+  line-height: 35px;
+  align-content: normal;
+}
+
+body {
+  padding-top: 90px;
+  background-color: rgb(241, 237, 237);
+  min-height: 5555px;
+}
+
+header {
+  top: 0;
+}
+
+nav {
+  top: 0;
+  margin: 0;
+  background-color: rgb(206, 201, 201);
+  font-size: 2em;
+  width: 100%;
+  text-decoration: none;
+  height: 70Px;
+  position: fixed;
+  z-index: 9999;
+}
+
+.topnav ul {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  color: rgb(174, 97, 42);
+  display: flex;
+  background-color: rgb(147, 147, 147);
+  background-repeat: repeat-x;
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  padding: 10px 12px;
+  color: rgb(141, 46, 46);
+  overflow: hidden;
+  transition: 0.4s;
+  position: relative;
+}
+
+h1 {
+  color: rgb(179, 80, 4);
+}
+
+div .my-image {
+  float: left;
+  width: 20px;
+  height: 10px;
+  display: inline-table;
+}
+
+p {
+  font-size: 1em;
+}
+
+.experience {
+  text-decoration: none;
+}
