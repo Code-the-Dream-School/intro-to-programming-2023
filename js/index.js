@@ -7,10 +7,10 @@ footer.appendChild(copyright);
 const skills = ['JavaScript', 'HTML', 'CSS', 'Problem solving'];
 const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul');
-for (let i of skills){
-    console.log(i);
-    let skill = document.createElement('li');
-    skill.innerText = skills[i];
+for (const item of skills){
+    console.log(item);
+    const skill = document.createElement('li');
+    skill.innerText = [item];
     skillsList.appendChild(skill);
 }
     
