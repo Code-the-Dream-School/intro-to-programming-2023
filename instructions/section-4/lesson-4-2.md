@@ -118,7 +118,7 @@ Create a commit for the changes you made and add a message describing the change
 
 Push your commit to the remote repository (visible in GitHub):
 
-    git push
+    
 
 Check the log to make sure your commit has been published:
 
