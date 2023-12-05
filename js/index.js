@@ -7,7 +7,7 @@ const copyright = document.createElement('p');
 copyright.innerHTML = 'Andrew Cloer ' + year;
 footer.appendChild(copyright);
 //Adding skills list and connecting it to html
-const skills = ['Basic JavaScript', 'Basic HTML'];
+const skills = ['Basic JavaScript', 'Basic HTML', 'Basic CSS'];
 const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul');
 for (let i = 0; i < skills.length; i++){
