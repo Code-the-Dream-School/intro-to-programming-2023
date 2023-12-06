@@ -1,0 +1,57 @@
+
+body {
+  background-color: rosybrown;  
+  color: darkslategrey;
+  padding: 25px 20px 15px 25px;
+  text-align: center;
+  font-family: sans-serif;
+  color: darkslategray;
+  }
+
+Section {
+    background-color: mistyrose;
+    margin: 0 1rem;
+    padding: 0 1 rem;
+    border: 2px solid peachpuff;
+    border-radius: 3px;
+ }
+
+
+ li {
+    display:block;
+ }
+
+
+ ul {
+    text-align: center;
+    list-style-position: inside;
+ }
+
+h1, h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    color: darkolivegreen
+}
+
+label {
+background-color: lightgrey;
+font-family: Arial;
+}
+
+input, 
+textarea {
+    font-size: 18px;
+    padding: 0.5rem;
+    border: 3px solid darkgrey;
+    border-radius: 8px;
+    margin:.30rem;
+    padding:.25rem;
+}
+
+button[type=sumbit] {
+background-color: azure;
+border: 3px solid darkblue;
+border-radius: 5px;
+padding: .25rem;
+}
+

@@ -52,21 +52,21 @@ messageForm.addEventListener("submit", (event) => {
 
     const newMessage = document.createElement("li");
 
-newMessage.innerHTML= 
- `<a href="mailto: ${usersEmail}">${usersName}</a><span> typed: ${usersMessage}</span>`
+    newMessage.innerHTML= 
+    `<a href="mailto: ${usersEmail}">${usersName}</a><span> typed: ${usersMessage}</span>`
 
-const removeButton = document.createElement("button");
-removeButton.innerText="remove";
-removeButton.type="button";
+    const removeButton = document.createElement("button");
+    removeButton.innerText="remove";
+    removeButton.type="button";
 
-removeButton.addEventListener("click", (event) => {
- let entry= event.target.parentNode
- entry.remove();
-})
+    removeButton.addEventListener("click", (event) => {
+    let entry= event.target.parentNode
+    entry.remove();
+    })
 
-newMessage.appendChild(removeButton);
+    newMessage.appendChild(removeButton);
 
-messageList.append(newMessage);
+    messageList.append(newMessage);
 
-event.target.reset()
+    event.target.reset()
 })
