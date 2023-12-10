@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+body {
+    background-color: #92b7a6;
+    color: midnightblue;
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+}
+
+section {
+    padding: 1rem;
+    margin: 5px;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 45px;
+    font-weight: bolder;
+    color: midnightblue;
+}
+
+li {
+    display: block;
+    width: 25%;
+    border: 2px solid #01411f;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+label {
+    font-size: 20px;
+    color: #01411f;
+}
+
+input, textarea {
+    font-size: 15px;
+    padding: 0.5rem;
+    margin: 5px;
+    border: 2px solid #01411f;
+    border-radius: 5px;
+}
+
+button {
+    background-color: lavender;
+    padding: 0.5rem;
+    margin: 5px;
+    border: 2px solid #01411f;
+    border-radius: 5px;
+    font-size: 17px; 
+    color: midnightblue;
+}
+
+#messages button {
+    background-color: midnightblue;
+    color: lavender;
+}
+
+footer {
+    background-color: #01411f;
+    color: lavender; 
+    padding: 20px;
+}
+
+a {
+    color: #01411f;
+    text-decoration: none;
+}
