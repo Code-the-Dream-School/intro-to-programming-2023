@@ -1,0 +1,128 @@
+
+
+@media (min-width: 769px) {  
+    
+    
+
+   #message-container{
+      display: flex;
+      justify-content: space-evenly;
+
+   }
+
+
+    #companies-container{/*each company column is supposed to take up an equal amount of space*/
+        flex: 1;
+        flex-basis: 0; /*flex-basis was supposed to make 3 even rows*/
+    }
+    
+    
+    #name{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        justify-content: space-between; 
+     }
+
+     .userName{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        justify-content: space-between;
+     }
+
+     #usersEmail{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between; 
+     }
+     
+     .usersEmail{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between; 
+     }
+
+     #usersMessage{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-content: space-between; 
+     }
+
+     .usersMessage{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-content: space-between; 
+
+     }
+
+
+
+
+}
+
+
+
+
+
+
+@media(max-width: 768px) {
+#companies-container{/*each company column is supposed to take up an equal amount of space*/
+   flex: 1;
+   flex-basis: 0; /*flex-basis was supposed to make 3 even rows*/
+}
+
+
+#name{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   justify-content: space-between; 
+}
+
+.userName{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   justify-content: space-between;
+}
+
+#usersEmail{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-between; 
+}
+
+.usersEmail{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-between; 
+}
+
+#usersMessage{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   justify-content: space-between; 
+}
+
+.usersMessage{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   justify-content: space-between; 
+
+}
+
+
+
+
+}
+
+

@@ -1,0 +1,107 @@
+<p id="myName">Michelle Wagner</p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Michelle Wagner</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+</head>
+
+<body>
+    <div class="dropdown">
+        <button id="menu" style="--c:#e95a49">Menu</button>
+        <div class="dropdown-options">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div>
+        <section id="about">
+            <h1>About</h1>
+            <p>I am currently a student at Code the Dream where beginning programmers are taught skills to build
+                applications. Concurrently, I work at Amazon as a Problem Solver in the stow area. Previously, I was a
+                Sales Associate in the jewelry, shoe, apparel, and accessory departments at Walmart. While working for
+                Walmart, I earned a Web Design and Application Certificate through Wilmington University in Delaware.
+                For fun, I enjoy spending time with family and friends.</p>
+        </section>
+
+        <section id="experience">
+            <h1>Experience</h1>
+            <div id="companies-container">
+                <div class="company">
+                    <p class="amazon-name">Amazon</p>
+                    <ul>
+                        <li>Pick</li>
+                        <li>Stow</li>
+                        <li>Problem Solve</li>
+                        <li>Damageland</li>
+                    </ul>
+                </div>
+
+                <div class="company">
+                    <p class="walmart-name"> Walmart</p>
+                    <p class="sales">Sales Associate for the following departments:</p>
+                    <ul>
+                        <li>Jewelry</li>
+                        <li>Shoe</li>
+                        <li>Apparel</li>
+                        <li>Accessory</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul></ul>
+        </section>
+
+        <section id="connect">
+            <h1>Connect</h1>
+            <a href="mailto:4mwagner93@gmail.com">Michelle Wagner</a><br>
+
+            <a href="https://www.linkedin.com/in/michelle-wagner-0a0a04260/" target="_blank">Michelle's Linked
+                Profile</a>
+        </section>
+    </div>
+    <section id="contactInfo">
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <div id="message-container">
+                <label for="name" class="userName">Name:</label>
+                <input type="text" id="name" name="usersName" required="true" placeholder="Your Name"><br>
+                <label for="usersEmail" class="usersemail">Email:</label>
+                <input type="email" id="usersEmail" name="usersEmail" required="true"
+                    placeholder="Your Email Address"><br>
+                <label for="usersMessage" class="usersMessage">Message:</label>
+                <textarea name="usersMessage" id="usersMessage" required="true" placeholder="Message"></textarea><br>
+            </div>
+            <button type="submit" class="submitBut">Submit</button>
+        </form>
+    </section>
+
+    <section id="messages">
+        <h2 class="messageInfo">Messages</h2>
+        <ul></ul>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

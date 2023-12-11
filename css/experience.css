@@ -1,0 +1,49 @@
+
+#experience{
+    background-color: 21fa90;    
+    padding: 6px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+#companies-container{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 100;
+    flex-wrap: wrap;
+
+}
+
+#experience h1{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+#experience p{
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+#experience li{
+    margin-left: 50px;
+}
+#experience .sales{
+    margin-left: 71px;
+}
+
+.amazon-name{
+    padding: 0 55px;
+}
+
+.walmart-name{
+    padding: 0 45px;
+}
