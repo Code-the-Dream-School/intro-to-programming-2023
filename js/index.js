@@ -39,6 +39,4 @@ newMessage.appendChild(removeButton);
 removeButton.addEventListener('click', () => {
   newMessage.remove();
 });
-
-
 } );

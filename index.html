@@ -3,19 +3,20 @@
     <head>
         <title> 
             <meta name="description" content="Your description" /> </title>
+            <link rel="stylesheet" href="css/index.css"> 
     </head>
     
     <body>
  
-        <p><h1>Olga Anokhina</h1></p>
+        <p class="p1"><h1>Olga Anokhina</h1></p>
             
         <img src="IMG_4956.JPG" alt="olga anokhina" width ="200" height="240" title="photo from summer 2020">
         <section>
-            <h1>"About"</h1>
+            <h1 class="p1">"About"</h1>
            <p> DOB 18/09/1981,  move from Russia 2015, Married, have two kids, Live in Cary, NC. </p>
         </section>
-        <section>
-            <h1>"Experience"</h1>
+        <section id="experiense">
+            <h1 class="p1">"Experience"</h1>
             <p><ul> <li>Have experience in chemical industry <a href='https://aleralabs.com/'target="_blank">AleraLab</a> </li>
                     <li>enginer constuction projects.</li>
                     <li>maintance HPLC.</li>
@@ -26,14 +27,14 @@
        
        
             <section id="skills">
-              <h2>"Skills"</h2>
+              <h2 class="p1">"Skills"</h2>
                 <ul> </ul>
             </section>
  <section>
-            <h1>"Connect"</h1>
+            <h1 class="p1">"Connect"</h1>
             <p>Email olgakaika@mail.ru <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Ffind-friends%2Fbrowser%2F"target="_blank">Facebook</a> </p>
  </section>       
- <section> <h2>"Leave a Message"</h2>
+ <section> <h2 class="p1">"Leave a Message"</h2>
     <form id="leave_message">
         <label for "usersName">Name</label><br>
         <input type="text" id="usersName" name="usersName" required><br>
@@ -41,12 +42,12 @@
         <input type="email" id="usersEmail" name="usersEmail" required><br>
         <label for "usersMessage"> Message </label><br>
         <textarea name="usersMessage" id="usersMessage" required></textarea><br>
-        <button type="submit"> Submit </button>
+        <button id = "button" type="submit"> Submit </button>
     </form>
  </section> 
 <section id="messages">
-    <h2>"Messages"</h2>
-    <ul> </ul>
+    <h2 class="p1">"Messages"</h2>
+    <ul id="messages"> </ul>
     
 </section> 
         <footer>

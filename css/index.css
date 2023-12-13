@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(174, 221, 221);
+    color:rgb(59, 19, 98);
+    font-family: Copperplate, Papyrus, fantasy;
+}
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+.p1 {
+    font-family: "Times New Roman", Times, serif;
+  }
+#experiense {
+    border: 3px solid rgb(242, 255, 0);
+}
+
+#skills {
+    border: 5px solid rgb(255, 136, 0);
+    background-color: rgb(194, 178, 153);
+    border-radius: 12px;
+}
+
+#leave_message {
+    font-size: 32px;
+  background-color: rgb(178, 198, 219);
+  color: tomato;
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin-left:1rem;
+}
+#button {
+    color: rgb(126, 71, 255);
+    background-color: rgb(209, 219, 178);
+    border: 1px solid rgb(255, 0, 21);
+    font-family: Brush Script MT, cursive;
+}
+#messages {
+    border: 2px  rgb(255, 0, 157);
+    background-color: rgb(236, 149, 9);
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 600px;
+    margin-left: 80px;
+}
+footer {
+    background-color: rgb(183, 149, 223);
+    margin-right: 900px;
+    margin-left: 80px;
+}
