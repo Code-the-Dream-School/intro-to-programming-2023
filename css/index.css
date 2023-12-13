@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
 
+.nav {
+    background-color: #01411f;
+    padding: 2.25rem;
+    text-align: center;
+    width: 100%;
+    margin: -10px;
+}
+
+.nav a {
+    color: aliceblue;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    padding: 40px;
+}
+
 body {
-    background-color: #92b7a6;
-    color: midnightblue;
-    font-family: 'Arial', sans-serif;
+    background-color: aliceblue;
+    color: #01411f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 17px;
+    font-weight: bolder;
 }
 
 section {
@@ -26,6 +42,7 @@ li {
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
+    background-color: mintcream;
 }
 
 label {
@@ -42,27 +59,67 @@ input, textarea {
 }
 
 button {
-    background-color: lavender;
+    background-color: mintcream;
     padding: 0.5rem;
     margin: 5px;
     border: 2px solid #01411f;
     border-radius: 5px;
     font-size: 17px; 
-    color: midnightblue;
+    color: #01411f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
 }
 
 #messages button {
-    background-color: midnightblue;
-    color: lavender;
+    background-color: #01411f;
+    color: mintcream;
 }
 
 footer {
     background-color: #01411f;
-    color: lavender; 
-    padding: 20px;
+    color: aliceblue; 
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    padding: 0.5rem;
+    width: 100%;
+    margin: -10px;
 }
 
 a {
     color: #01411f;
     text-decoration: none;
+}
+
+/* Use Flexbox */
+#certifications ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+ }
+
+ #form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+ }
+
+ /* Use Media Queries */
+@media (max-width: 600px) {
+    .nav a {
+        font-size: 12px;
+        padding: 3px;
+    }
+    h1, h2 {
+        font-size: 30px;
+    }
+    body {
+        font-size: 10px;
+    }
+    footer {
+        font-size: 12px;
+    }
 }
