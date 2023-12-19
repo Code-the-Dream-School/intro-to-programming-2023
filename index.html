@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Dewi-Anggraini</title>
+    
   </head>
   <body>
     <h1>Hi, I'm Dewi Anggraini!</h1>
@@ -40,13 +41,13 @@
     <img src="https://shop.static.ingka.ikea.com/category-images/Category_dining-sets.jpg">
     <section>
       <h2>Leave a Message</h2>
-      <form name="leave_message">
-        <label for="users_name">Users Name</label><br>
-        <input type="text" name="usersName" required="true"><br>
-        <label for="users_email">Users Email</label><br>
-        <input type="text" name="usersEmail" required="true"><br>
-        <label for="users_message">Users Message</label><br>
-        <textarea name="usersMessage" required="true"></textarea><br>
+      <form action="index.html" id="leave_message" method="post">
+        <label for="users_name">Users Name:</label><br>
+        <input type="text" name="usersName" id="users_name" required="true"><br>
+        <label for="users_email">Users Email:</label><br>
+        <input type="text" name="usersEmail" id="users_email" required="true"><br>
+        <label for="users_message">Users Message:</label><br>
+        <textarea name="usersMessage" id="users_message" required="true"></textarea><br>
         <button type="submit">Submit</button>
       </form>
     </section>
