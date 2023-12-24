@@ -1,8 +1,27 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 1.25em; 
+  }
 body {
     background-color: rgb(174, 221, 221);
     color:rgb(59, 19, 98);
     font-family: Copperplate, Papyrus, fantasy;
 }
+header h1 {
+    position: fixed;
+    left: 20px;
+    height: 8%;
+    width:80%;
+    background-color: #e0b21a;
+    color: ghostwhite;
+    padding: 1px 1px;
+    border: 5px solid #fc8e11;
+    border-bottom-color: #cf7919;
+    }
+ 
+
 section {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -12,22 +31,64 @@ section {
 .p1 {
     font-family: "Times New Roman", Times, serif;
   }
-#experiense {
-    border: 3px solid rgb(242, 255, 0);
+   #aboutTab { 
+   
+    left: 200px;
+    width:30%;
+    background-color: #e0b21a;
+    color: ghostwhite;
+    padding: 1px 1px;
+    border: 5px solid #fc8e11;
+    border-bottom-color: #cf7919;
+    }
+ 
+ 
+ 
+ 
+  #expirienseTab  { 
+   
+  left: 200px;
+  
+  background-color: #e0b21a;
+  color: ghostwhite;
+  padding: 1px 1px;
+  border: 5px solid #fc8e11;
+  border-bottom-color: #cf7919;
+  }
+  
+#experiense li {
+    display:  block;
+    width: 30%;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    background-color: rgb(168, 165, 216);
+  
 }
-
+  
 #skills {
-    border: 5px solid rgb(255, 136, 0);
-    background-color: rgb(194, 178, 153);
-    border-radius: 12px;
-}
+ 
+    background-color: #1ae0ae;
+    color: rgb(255, 255, 248);
+    padding: 14px 2px;
+    border: 5px solid #fc8e11;
+    border-bottom-color: #cf7919;}
+#skillsTop {
+    left: 0;
+    background-color: #e0b21a;
+    color: ghostwhite;
+    padding: 10px 2px;
+    border: 5px solid #fc8e11;
+    border-bottom-color: #cf7919;
 
+
+}
 #leave_message {
-    font-size: 32px;
+    display: inline-grid;
+    font-size: 20px;
   background-color: rgb(178, 198, 219);
   color: tomato;
   font-family: Arial, sans-serif;
-  width: 80%;
+  width:30%;
   margin-left:1rem;
 }
 #button {
@@ -51,3 +112,17 @@ footer {
     margin-right: 900px;
     margin-left: 80px;
 }
+
+
+@media screen and (min-width: 600px) {
+    .photo {
+        
+      float: left;
+      width: 300px;
+      margin: 6rem 1rem 1rem 0;
+    }
+    #about{
+      clear: both;
+    } 
+  }
+  

@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> 
             <meta name="description" content="Your description" /> </title>
             <link rel="stylesheet" href="css/index.css"> 
     </head>
     
     <body>
- 
-        <p class="p1"><h1>Olga Anokhina</h1></p>
+        <header>
+        <p ><h1>Olga Anokhina</h1></p>
+        </header>   
+        <section >
             
-        <img src="IMG_4956.JPG" alt="olga anokhina" width ="200" height="240" title="photo from summer 2020">
-        <section>
-            <h1 class="p1">"About"</h1>
-           <p> DOB 18/09/1981,  move from Russia 2015, Married, have two kids, Live in Cary, NC. </p>
-        </section>
-        <section id="experiense">
-            <h1 class="p1">"Experience"</h1>
-            <p><ul> <li>Have experience in chemical industry <a href='https://aleralabs.com/'target="_blank">AleraLab</a> </li>
+            <img src="IMG_4956.JPG" alt="olga anokhina"  title="photo from summer 2020" class="photo">
+            
+    </section>
+        <section id="about">
+            <h1 class="p1" id="aboutTab">"About"</h1>
+           <p > DOB 18/09/1981,  move from Russia 2015, Married, have two kids, Live in Cary, NC. </p>
+       </section>
+        <section >
+            
+            <h1 id=expirienseTab>"Experience"</h1>
+            <p class="p1" ><ul id="experiense"> 
+                    <li>Have experience in chemical industry <a href='https://aleralabs.com/'target="_blank">AleraLab</a> </li>
                     <li>enginer constuction projects.</li>
                     <li>maintance HPLC.</li>
                     <li>Have Driver Lisence.</li> 
@@ -26,9 +35,11 @@
         </section>
        
        
-            <section id="skills">
-              <h2 class="p1">"Skills"</h2>
-                <ul> </ul>
+            <section >
+              <h2 class="p1" id="skillsTop">"Skills"</h2>
+              <h4 id="skills">
+                <ul > </ul>
+              </h4>
             </section>
  <section>
             <h1 class="p1">"Connect"</h1>
@@ -50,6 +61,13 @@
     <ul id="messages"> </ul>
     
 </section> 
+<nav>
+    <ul>
+      <li><a href="#aboutTab">About</a></li>
+      <li><a href="#expirienseTab">Experience</a></li>
+      <li><a href="#skillsTop">Skills</a></li>
+    </ul>
+  </nav>
         <footer>
              
         </footer>
