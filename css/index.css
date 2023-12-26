@@ -1,0 +1,54 @@
+body {
+    background-color:rgb(247, 199, 206);
+    text-align:left;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+p {
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+section {
+   padding: 10px 10px;
+   margin: 50px;
+}
+.headings {
+    font-size: 15px;
+    font-weight: bold;
+    color: coral;
+}
+dl dt {
+    background-color: palegreen;
+    border-style: none;
+}
+ul li {
+    background-color: aqua;
+    border-style: none;
+}
+form label {
+    font-size: 20px;
+    color: darkblue;
+}
+input, textarea {
+    font-size: 15px;
+    padding: 5px 5px;
+    border: solid;
+}
+form button {
+    background-color: #04aa6d;
+    padding: 5px 5px;
+    border: solid;
+    color: white;
+}
+footer {
+    background-color: floralwhite;
+    padding: 10px 10px;
+    margin: 50px;
+}
+
+
