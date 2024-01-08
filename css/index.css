@@ -50,5 +50,30 @@ footer {
     padding: 10px 10px;
     margin: 50px;
 }
+/* add navigational header */
+.main-nav {
+    background-color: black;
+    color: white;
+}
+/* style the links inside navigation bar */
+.main-nav a {
+    text-align: center;
+    text-decoration: none;  
+}
+/* change the color of link hover */
+.main-nav a:hover {
+    background-color: #04aa6d;
+    color: black;
+}
+/* add color to active link */
+.main-nav a.active {
+    background-color: cadetblue;
+    color: black;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 
