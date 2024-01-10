@@ -1,6 +1,6 @@
 
 body {
-  background-color: rosybrown;  
+  background-color: rgb(214, 197, 197);  
   color: darkslategrey;
   padding: 25px 20px 15px 25px;
   text-align: center;
@@ -9,13 +9,16 @@ body {
   }
 
 Section {
-    background-color: mistyrose;
+    background-color: rgb(255, 230, 227);
     margin: 0 1rem;
     padding: 0 1 rem;
     border: 2px solid peachpuff;
     border-radius: 3px;
  }
 
+ p {
+  margin: 1rem
+ }
 
  li {
     display:block;
@@ -30,7 +33,7 @@ Section {
 h1, h2 {
     font-size: 30px;
     font-weight: bolder;
-    color: darkolivegreen
+    color: darkolivegreen;
 }
 
 label {
@@ -48,10 +51,32 @@ textarea {
     padding:.25rem;
 }
 
-button[type=sumbit] {
+button[type="submit"] {
 background-color: azure;
 border: 3px solid darkblue;
 border-radius: 5px;
 padding: .25rem;
+margin: auto;
+} 
+
+#experience ul {
+    display: flex;
+    flex-direction: column;
 }
 
+#leave_message {
+justify-content: center; 
+display: flex;
+padding: 3rem;
+flex-direction: column;
+flex-basis: auto;
+}
+
+.form-row > label {
+    padding: .5em 1em .5em 0;
+  }
+
+  .form-row > input,
+  .form-row > button {
+    padding: .5em;
+  }
