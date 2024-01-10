@@ -1,0 +1,44 @@
+body{
+background: rgb(52,235,229); 
+color: rgb(161,156,154);
+font-family:'Times New Roman', Times, serif
+}  
+
+section{
+margin-top: 1.5em;
+} 
+
+h2{
+font-size: 32px; 
+font-weight: 700;
+color: rgb(26,25,24);
+}
+.experience-list li{
+   color: rgb(175,29,194);
+margin-top: 1.5em;
+
+} 
+
+.skills-list li{
+    color: rgb(181,62,72);
+    margin-top: 1.5em;
+}
+.message_form label {
+    font-size: 16px; 
+    color: rgb(160, 50,74);
+}
+.message_form textarea{
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 1.5em; 
+    
+}
+.message_form button{
+    background-color: rgb(40,97,23);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+footer{
+    padding: 10px; 
+    background-color: rgb(217,208,209)
+}
