@@ -70,3 +70,29 @@ messageForm.addEventListener("submit", (event) => {
 
     event.target.reset()
 })
+
+// ajax
+
+const githubRequest = new XMLHttpRequest();
+const url = "https://api.github.com/users/Alli12324/repos"
+
+// console.log(url);
+
+githubRequest.open("GET", url);
+githubRequest.send();
+
+githubRequest.addEventListener("load", function(){
+  const repositories= JSON.parse(githubRequest.responseText);
+console.log(repositories);
+
+const projectSection = document.getElementById("projects");
+
+const projectList = projectSection.querySelector("ul");
+
+for (let i = 0; i < repositories.length; i++) {
+  const project = document.createElement("li");
+
+project.innerText = repositories[i].name;
+projectList.appendChild(project);
+};
+});
