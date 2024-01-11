@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>Dewi-Anggraini</title>
     <link rel="stylesheet" href="css/index.css">
+    <img src="https://shop.static.ingka.ikea.com/category-images/Category_dining-sets.jpg">
   </head>
+
   <body>
     <h1>Hi, I'm Dewi Anggraini!</h1>
-    <nav class="main-nav">
       <ul>
         <li><a class="active" href="#">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#connect">Connect</a></li>
       </ul>
-    </nav>
+
     <section>
       <h2 class="headings">About Me</h2>
       <p>I just got to know about Code The Dream Program early this year. I joined the Intro Class Program. 
@@ -21,27 +22,30 @@
         learning a new things, meeting a new people and collaborating.
        </p>
     </section>
-    <section>
+
+    <section id="experience">
       <h2>Experience</h2>
-      <dl>
+      <dl class="experience_list">
         <dt> PT. Konimex</dt>
         <dd>as A Validation Officer</dd>
         <dt>PT. K24</dt>
         <dd>as A Pharmacist </dd>
       </dl>
     </section>
+
     <section id="skills">
       <h2>Skills</h2>
-      <ul></ul>
+      <ul class="skills_list"></ul>
     </section>
-    <section>
+
+    <section id="connect">
       <h2>Connect</h2>
       <a href="mailto:nn.dewi.anggraini@gmail.com">Dewi-Anggraini</a>
     </section>
-    <img src="https://shop.static.ingka.ikea.com/category-images/Category_dining-sets.jpg">
-    <section>
+
+    <section id="message_form">
       <h2>Leave a Message</h2>
-      <form action="index.html" name="leave_message" method="post">
+      <form action="index.html" id="leave_message" method="post">
         <label for="users_name">Users Name:</label><br>
         <input type="text" name="usersName" id="users_name" required><br>
         <label for="users_email">Users Email:</label><br>
@@ -51,13 +55,16 @@
         <button type="submit">Submit</button>
       </form>
     </section>
-    <section id="messages">
+
+    <section id="message_section">
       <h2>Messages</h2>
-      <ul id="responds"></ul>
+      <ul></ul>
     </section>
+
     <footer></footer>
     <script src="js/index.js">
     </script>
+
   </body>
 </html>
  

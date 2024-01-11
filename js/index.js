@@ -14,8 +14,9 @@ for (const item of skills){
     skillsList.appendChild(skill);
 }
 //Handle Message Form Submit
-const messageForm = document.querySelector('form[name="leave_message"]');
-const input = messageForm.querySelector("input");
+const messageForm = document.getElementById('leave_message');
+const messageSection = document.getElementById('message_section');
+const messageList = messageSection.querySelector('ul');
 messageForm.addEventListener("submit", (event) => {    
 
     event.preventDefault();
@@ -24,42 +25,30 @@ messageForm.addEventListener("submit", (event) => {
     const usersEmail = event.target.usersEmail.value;
     const usersMessage = event.target.usersMessage.value;
     
-    const ul = document.getElementById('responds');
-    const li = document.createElement('li');
-    ul.appendChild(li);
-
-    console.log('Name', usersName);
-    console.log('Email', usersEmail);
-    console.log('Message', usersMessage);
-
-    const messageSection = document.getElementById('messages');
-    const messageList = messageSection.querySelector('ul');
+    console.log(usersName);
+    console.log(usersEmail);
+    console.log(usersMessage);  
+  
     const newMessage = document.createElement('li');
-    const usersLink = document.createElement('a');
-    usersLink.href = 'mailto:' + usersEmail;
-    usersLink.textContent = usersName;
 
-    const messageSpan = document.createElement('span');
-    messageSpan.textContent = usersMessage;
-
-    li.appendChild(usersLink);
-    li.appendChild(document.createTextNode(':'));
-    li.appendChild(messageSpan);
-    ul.appendChild(li);
+    messageForm.reset();
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a><span>wrote: ${usersMessage}</span>`;   
 
 // remove button
     const removeButton = document.createElement('button');
-    removeButton.textContent = 'remove';
-    li.appendChild(removeButton); 
-    messageList.appendChild(newMessage);
-    messageForm.reset();  
- }, required);
+    removeButton.textContent = 'remove'; 
+    removeButton.type = "button";    
+    
+    removeButton.addEventListener('click', (event) => { 
+        event.preventDefault();
 
- //Display Messages in List
-document.getElementById('responds').addEventListener('click', (event) => {    
-   if (event.target.tagName === 'BUTTON') {
-     const li = e.target.parentNode;
-     const ul = li.parentNode;
-     ul.removeChild(li);
-   }
-});
+        const entry = removeButton.parentNode;
+        entry.remove();
+
+     });
+
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+
+ });
+

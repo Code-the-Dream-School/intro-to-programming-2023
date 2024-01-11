@@ -5,30 +5,41 @@ body {
     padding: 0px;
     margin: 0px;
 }
-h1 {
+h1, h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
 }
 p {
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 section {
-   padding: 10px 10px;
-   margin: 50px;
+   margin-top: 1.5em;
 }
+.experience_list {
+    border-block-style: solid;
+    margin-top: 1.5em;
+}
+.skills_list {
+    margin-top: 1.5em;
+}
+
 .headings {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: coral;
 }
 dl dt {
     background-color: palegreen;
     border-style: none;
+    font-size: 20px;
 }
 ul li {
     background-color: aqua;
     border-style: none;
+    font-size: 20px;
 }
 form label {
     font-size: 20px;
@@ -44,36 +55,24 @@ form button {
     padding: 5px 5px;
     border: solid;
     color: white;
+    width: 100px;
 }
 footer {
-    background-color: floralwhite;
+    background-color: plum;
+    color: firebrick;
     padding: 10px 10px;
     margin: 50px;
 }
-/* add navigational header */
-.main-nav {
-    background-color: black;
-    color: white;
-}
-/* style the links inside navigation bar */
-.main-nav a {
-    text-align: center;
-    text-decoration: none;  
-}
-/* change the color of link hover */
-.main-nav a:hover {
-    background-color: #04aa6d;
-    color: black;
-}
-/* add color to active link */
-.main-nav a.active {
-    background-color: cadetblue;
-    color: black;
-}
 ul {
     list-style-type: none;
+    border-block-style: solid;
     padding: 0;
     margin: 0;
 }
+img {
+    width: 500px;
+    border-radius: 50%;
+}
+
 
 
