@@ -1,0 +1,78 @@
+body {
+    background-color:rgb(247, 199, 206);
+    text-align:left;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px;
+    margin: 0px;
+}
+h1, h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+}
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+   margin-top: 1.5em;
+}
+.experience_list {
+    border-block-style: solid;
+    margin-top: 1.5em;
+}
+.skills_list {
+    margin-top: 1.5em;
+}
+
+.headings {
+    font-size: 20px;
+    font-weight: bold;
+    color: coral;
+}
+dl dt {
+    background-color: palegreen;
+    border-style: none;
+    font-size: 20px;
+}
+ul li {
+    background-color: aqua;
+    border-style: none;
+    font-size: 20px;
+}
+form label {
+    font-size: 20px;
+    color: darkblue;
+}
+input, textarea {
+    font-size: 15px;
+    padding: 5px 5px;
+    border: solid;
+}
+form button {
+    background-color: #04aa6d;
+    padding: 5px 5px;
+    border: solid;
+    color: white;
+    width: 100px;
+}
+footer {
+    background-color: plum;
+    color: firebrick;
+    padding: 10px 10px;
+    margin: 50px;
+}
+ul {
+    list-style-type: none;
+    border-block-style: solid;
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 500px;
+    border-radius: 50%;
+}
+
+
+

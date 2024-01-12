@@ -15,7 +15,9 @@ for (const item of skills){
 }
 //Handle Message Form Submit
 const messageForm = document.getElementById('leave_message');
-messageForm.addEventListener("submit", function(event){    
+const messageSection = document.getElementById('message_section');
+const messageList = messageSection.querySelector('ul');
+messageForm.addEventListener("submit", (event) => {    
 
     event.preventDefault();
     
@@ -23,25 +25,30 @@ messageForm.addEventListener("submit", function(event){
     const usersEmail = event.target.usersEmail.value;
     const usersMessage = event.target.usersMessage.value;
     
-    console.log('Name', usersName);
-    console.log('Email', usersEmail);
-    console.log('Message', usersMessage);
+    console.log(usersName);
+    console.log(usersEmail);
+    console.log(usersMessage);  
+  
+    const newMessage = document.createElement('li');
 
     messageForm.reset();
- }, true);
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a><span>wrote: ${usersMessage}</span>`;   
 
- //Display Messages in List
-const messageSection = document.getElementById('messages');
-const messageList = messageSection.querySelector('ul');
-const newMessage = document.createElement('li');
-const removeButton = document.createElement('button');
+// remove button
+    const removeButton = document.createElement('button');
+    removeButton.textContent = 'remove'; 
+    removeButton.type = "button";    
+    
+    removeButton.addEventListener('click', (event) => { 
+        event.preventDefault();
 
-removeButton.addEventListener('click', () => {    
-    removeButton.innerText = 'remove';
-    removeButton.Type = 'button';
-    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a><span>${usersMessage}</span>`;    
-    const entry = removeButton.parentNode;
-    entry.remove();
+        const entry = removeButton.parentNode;
+        entry.remove();
+
+     });
+
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
-});
+
+ });
+
