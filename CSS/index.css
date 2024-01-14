@@ -1,0 +1,79 @@
+/* Reset some default styles for better consistency across browsers */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Global Styles */
+body {
+    background-color: #f5f5f5; /* Change the background color of the page body */
+    color: #444; /* Change the default text color */
+    font-family: 'Arial', sans-serif; /* Customize the font family */
+}
+
+
+
+
+/* Add spacing between sections */
+section {
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #007bff; /* Change the color of all headings */
+    font-weight: bold; /* Change the font weight of all headings */
+}
+
+/* Experience and Skills List Items */
+ul {
+    list-style: none;
+}
+
+ul li {
+    background-color: #f9f9f9; /* Transform list items into styled blocks */
+    margin-bottom: 5px; /* Add spacing between list items */
+    padding: 10px; /* Add padding to list items */
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 14px; /* Change font size of labels */
+    color: #555; /* Change font color of labels */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px; /* Add spacing between form fields */
+    border: 1px solid #ccc; /* Add border to form fields */
+}
+
+/* Submit Button Styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Messages List Items */
+.messages li {
+    background-color: #e0e0e0; /* Transform list items into styled blocks */
+    margin-bottom: 5px; /* Add spacing between list items */
+    padding: 10px; /* Add padding to list items */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px; /* Add spacing before the footer */
+    background-color: #333; /* Change background color of the footer */
+    color: #fff; /* Change text color of the footer */
+    padding: 10px; /* Add padding to the footer */
+}
