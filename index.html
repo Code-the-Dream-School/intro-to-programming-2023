@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Dewi-Anggraini</title>
     <link rel="stylesheet" href="css/index.css">
-    <img src="https://shop.static.ingka.ikea.com/category-images/Category_dining-sets.jpg">
+    <img src="https://shop.static.ingka.ikea.com/category-images/Category_dining-sets.jpg" class="center">
   </head>
 
   <body>
@@ -26,9 +26,9 @@
     <section id="experience">
       <h2>Experience</h2>
       <dl class="experience_list">
-        <dt> PT. Konimex</dt>
+        <dt class="list"> PT. Konimex</dt>
         <dd>as A Validation Officer</dd>
-        <dt>PT. K24</dt>
+        <dt class="list">PT. K24</dt>
         <dd>as A Pharmacist </dd>
       </dl>
     </section>
@@ -45,15 +45,17 @@
 
     <section id="message_form">
       <h2>Leave a Message</h2>
-      <form action="index.html" id="leave_message" method="post">
-        <label for="users_name">Users Name:</label><br>
-        <input type="text" name="usersName" id="users_name" required><br>
-        <label for="users_email">Users Email:</label><br>
-        <input type="text" name="usersEmail" id="users_email" required><br>
-        <label for="users_message">Users Message:</label><br>
-        <textarea name="usersMessage" id="users_message" required></textarea><br>
-        <button type="submit">Submit</button>
-      </form>
+      <div>
+        <form action="index.html" id="leave_message" method="post">
+          <label for="users_name">Users Name:</label><br>
+          <input type="text" name="usersName" id="users_name" required><br>
+          <label for="users_email">Users Email:</label><br>
+          <input type="text" name="usersEmail" id="users_email" required><br>
+          <label for="users_message">Users Message:</label><br>
+          <textarea name="usersMessage" id="users_message" required></textarea><br>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </section>
 
     <section id="message_section">
