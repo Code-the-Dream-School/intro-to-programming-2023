@@ -91,8 +91,18 @@ const projectList = projectSection.querySelector("ul");
 
 for (let i = 0; i < repositories.length; i++) {
   const project = document.createElement("li");
+  const link = document.createElement("a");
+  const date = document.createElement("span");
 
-project.innerText = repositories[i].name;
+  link.innerText = repositories[i].name;
+  link.href = repositories[i].html_url;
+  
+  const dateOfrepo = repositories[i].created_at.split("T")[0];
+  date.innerText = ` -${dateOfrepo}`;
+  console.log(dateOfrepo);
+
+project.appendChild(link);
+project.appendChild(date);
 projectList.appendChild(project);
-};
+}
 });
