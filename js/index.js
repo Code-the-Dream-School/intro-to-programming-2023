@@ -36,6 +36,7 @@ for (let i =0; i < skills.length; i++) {
 const messageForm = document.getElementById("leave_message");
 
 
+
 messageForm.addEventListener("submit", (event) => {
 
     event.preventDefault();
@@ -69,6 +70,12 @@ messageForm.addEventListener("submit", (event) => {
     messageList.append(newMessage);
 
     event.target.reset()
+    
+    let hideMessages = messageSection.style.display = "none";
+    
+    if (messageList.childElementCount == 0) {
+      hideMessages();
+    };
 })
 
 // ajax
