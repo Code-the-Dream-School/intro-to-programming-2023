@@ -9,11 +9,13 @@
 
   <body>
     <h1>Hi, I'm Dewi Anggraini!</h1>
-      <ul>
-        <li><a class="active" href="#">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#connect">Connect</a></li>
-      </ul>
+      <div class="main-nav">
+        <a class="active" href="#">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#message_form">Leave A Message</a>
+        <a href="#connect">Connect</a>
+      </div>
 
     <section>
       <h2 class="headings">About Me</h2>
@@ -45,7 +47,7 @@
 
     <section id="message_form">
       <h2>Leave a Message</h2>
-      <div>
+      <div class="container">
         <form action="index.html" id="leave_message" method="post">
           <label for="users_name">Users Name:</label><br>
           <input type="text" name="usersName" id="users_name" required><br>

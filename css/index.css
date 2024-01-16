@@ -3,7 +3,7 @@ body {
     text-align:left;
     font-family: 'Times New Roman', Times, serif;
     padding: 0px;
-    margin: 0px;
+    margin: 5px;
 }
 h1, h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -12,24 +12,51 @@ h1, h2 {
     color: darkblue;
 }
 p {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 section {
    margin-top: 1.5em;
+}
+.main-nav {
+    overflow: hidden;
+    background-color: gray;
+}
+.main-nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.main-nav a.hover {
+    background-color: #ddd;
+    color: black;
+}
+.main-nav a.active {
+    background-color: #04AA6D;
+    color: black;
 }
 .experience_list {
     border-block-style: solid;
     margin-top: 1.5em;
 }
+#skills {
+    background: beige;
+    padding: 20px;
+}
 .skills_list {
     margin-top: 1.5em;
+    color: darkblue;
+    margin: 5px;
 }
-
 .headings {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    color: coral;
+    color: darkblue;
 }
 dl {
     display: flex;
@@ -52,7 +79,7 @@ dd {
     border-bottom: 1px solid #666;
 }
 ul li {
-    background-color: aqua;
+    background-color: beige;
     border-style: none;
     font-size: 20px;
 }
@@ -63,7 +90,7 @@ form label {
 input, textarea {
     font-size: 15px;
     padding: 5px 5px;
-    width: 100%;
+    width: 250px;
 }
 footer {
     background-color: plum;
@@ -72,7 +99,7 @@ footer {
     margin: 50px;
 }
 ul {
-    list-style-type: none;
+    list-style-type: square;
     border-block-style: solid;
     padding: 0;
     margin: 0;
@@ -88,28 +115,30 @@ img {
     width: 50%;
 }
 form button {
+    width: 250px;
     background-color: #04aa6d;
     padding: 5px 5px;
     border: solid;
     color: white;
-    width: 100%;
+    width: 50%;
 }
-div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    width: 100%;
     padding: 20px;
 }
 input[type=text] {
-    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
+    display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 input[type=submit] {
-    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 12px 40px;
