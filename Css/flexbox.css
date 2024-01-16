@@ -1,0 +1,64 @@
+
+
+#Experience dl {
+    display: flex;
+    justify-content: space-around;
+}
+#Navigation {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 0px;
+    justify-content: space-around;
+    height: 5vh;
+}
+.navButton {
+    color: bisque;
+    background-color: black;
+    border: none;
+    padding: 10px;
+}
+.navButton:hover {
+    background-color: darkgray;
+}
+.navButton:active {
+    background-color: gray;
+}
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+  
+    #Navigation {
+    flex-direction: row;
+    align-items: center;
+}
+.navButton {
+    margin-right: 5px;
+    flex: 0 1 auto;
+    }
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+}
+#Submit {
+    display: inline;
+    position: center;
+}
+
+header {
+    grid-area: header;
+}
+@media (minn-width: 768px) {
+    body {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 100px minmax(150px, auto) 100px;
+    }
+}
