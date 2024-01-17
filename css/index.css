@@ -1,9 +1,8 @@
 
 body {
   background-color: rgb(35, 27, 49);  
-  color: (#aea2a2);
-  padding: 25px 20px 15px 25px;
-  /* text-align: center; */
+  /* padding: 25px 20px 15px 25px; */
+  padding: 1 rem;
   font-family: Comfortaa, sans-serif;
   color: rgb(226, 234, 234);
   }
@@ -86,6 +85,18 @@ padding: 3rem;
 flex-direction: column;
 flex-basis: auto;
 }
+
+.topnav {
+  background-color: rgb(24, 41, 32);
+  padding: 1rem;
+ 
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
+  
+  }
 
 .form-row > label {
     padding: .5em 1em .5em 0;
