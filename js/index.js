@@ -33,22 +33,36 @@ for (let i =0; i < skills.length; i++) {
 
 //Message Form
 
+const messageSection = document.getElementById("messages");
+
+    const messageList = messageSection.querySelector("ul");
+
+const hideMessages = () => {
+  if (messageList.childElementCount == 0) {
+    messageSection.style.display = "none";
+  };
+};
+ 
+hideMessages();
+
+// if (messageList.childElementCount == 0) {
+//   messageSection.style.display = "none"();
+// };
+
 const messageForm = document.getElementById("leave_message");
+
 
 
 messageForm.addEventListener("submit", (event) => {
 
     event.preventDefault();
 
+
     const usersName=event.target.querySelector('[name="usersName"]').value;
     const usersEmail= event.target.querySelector('[name="usersEmail"]').value;
     const usersMessage= event.target.querySelector('[name="usersMessage"]').value;
 
     console.log(usersName, usersEmail, usersMessage);
-
-    const messageSection = document.getElementById("messages");
-
-    const messageList = messageSection.querySelector("ul");
 
     const newMessage = document.createElement("li");
 
@@ -69,6 +83,8 @@ messageForm.addEventListener("submit", (event) => {
     messageList.append(newMessage);
 
     event.target.reset()
+    
+    hideMessages();
 })
 
 // ajax
@@ -91,8 +107,18 @@ const projectList = projectSection.querySelector("ul");
 
 for (let i = 0; i < repositories.length; i++) {
   const project = document.createElement("li");
+  const link = document.createElement("a");
+  const date = document.createElement("span");
 
-project.innerText = repositories[i].name;
+  link.innerText = repositories[i].name;
+  link.href = repositories[i].html_url;
+  
+  const dateOfrepo = repositories[i].created_at.split("T")[0];
+  date.innerText = ` -${dateOfrepo}`;
+  console.log(dateOfrepo);
+
+project.appendChild(link);
+project.appendChild(date);
 projectList.appendChild(project);
-};
+}
 });

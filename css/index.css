@@ -1,23 +1,22 @@
 
 body {
-  background-color: rgb(214, 197, 197);  
-  color: darkslategrey;
-  padding: 25px 20px 15px 25px;
-  text-align: center;
-  font-family: sans-serif;
-  color: darkslategray;
+  background-color: rgb(35, 27, 49);  
+  /* padding: 25px 20px 15px 25px; */
+  padding: 1 rem;
+  font-family: Comfortaa, sans-serif;
+  color: rgb(226, 234, 234);
   }
 
 Section {
-    background-color: rgb(255, 230, 227);
-    margin: 0 1rem;
-    padding: 0 1 rem;
-    border: 2px solid peachpuff;
+    background-color: rgb(101, 95, 107);
+    margin: 1rem 1rem;
+    padding: .5rem 1rem;
+    border: 2px solid (49, 73, 52);
     border-radius: 3px;
  }
 
  p {
-  margin: 1rem
+  margin: 1rem;
  }
 
  li {
@@ -26,19 +25,22 @@ Section {
 
 
  ul {
-    text-align: center;
+    /* text-align: center; */
     list-style-position: inside;
  }
 
 h1, h2 {
     font-size: 30px;
     font-weight: bolder;
-    color: darkolivegreen;
+    color: rgb(255, 255, 255);
+    padding: .5rem;
+    Margin: 0 1rem;
 }
 
 label {
-background-color: lightgrey;
+background-color: rgb(58, 35, 70);
 font-family: Arial;
+Margin: auto;
 }
 
 input, 
@@ -64,6 +66,18 @@ margin: auto;
     flex-direction: column;
 }
 
+a {
+  font-family: Comfortaa, sans-serif;
+  font-size: medium;
+  color: rgb(139, 231, 223);
+  text-decoration: none;
+}
+
+a:hover {
+  color:hotpink;
+  font-size: large;
+}
+
 #leave_message {
 justify-content: center; 
 display: flex;
@@ -71,6 +85,18 @@ padding: 3rem;
 flex-direction: column;
 flex-basis: auto;
 }
+
+.topnav {
+  background-color: rgb(24, 41, 32);
+  padding: 1rem;
+ 
+}
+
+.topnav {
+  position: sticky;
+  top: 0;
+  
+  }
 
 .form-row > label {
     padding: .5em 1em .5em 0;
