@@ -59,3 +59,25 @@ messageForm[0].addEventListener('submit', (event) => {
    //Reset form after submit
    document.getElementById("form").reset();
 });
+
+//Ajax
+const githubRequest = new XMLHttpRequest();
+const url = "https://api.github.com/users/tiasonora/repos";
+
+githubRequest.open("GET", url);
+githubRequest.send();
+
+githubRequest.addEventListener("load", function() {
+    const data = JSON.parse(githubRequest.responseText);
+    //console.log(data[0].name);
+    //console.log(data[0].html_url);
+    const projectList = document.querySelector("#projects ul");
+
+    for (let i = 0; i < data.length; i++) {
+        const repo = document.createElement("li");
+
+        repo.innerText = data[i].name;
+        projectList.appendChild(repo);
+    }
+
+});
