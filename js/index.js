@@ -6,7 +6,7 @@ const copyright = document.createElement("p");
 copyright.innerHTML = "Olga Anokhina" +" "+ thisYear;
 //*thisYear.appendChild(copyright);
 footer.appendChild(copyright);
-var skills = ["JavaScript", "Html", "Excel"];
+var skills = ["JavaScript", "Html", "Excel", "Word", "AutoCad"];
 var skillSection = document.getElementById("skills");
 var skillsList = skillSection.querySelector("ul");
 for (i=0; i<skills.length; i++){
@@ -26,26 +26,42 @@ messageForm.addEventListener("submit", (e) => {
   var messageSection = document.getElementById("messages");
   var messageList = messageSection.querySelector("ul");
   var newMessage = document.createElement("li");
-  newMessage.innerHTML = `<a href = "mailto: userEmail">  ${usersName} </a>
-  <span>wrote:${usersMessage}</span> &nbsp  `
-  messageList.appendChild(newMessage);
-
-  messageForm.reset();  
+  newMessage.innerHTML = `<a href = "mailto:${usersEmail}">  ${usersName} </a>
+  <span>wrote: ${usersMessage}</span> <p></p>` 
 const removeButton=document.createElement('button');
+const editButton=document.createElement('button');
 removeButton.innerText = "remove";
+editButton.innerText = "edit";
 removeButton.type = "button";
+editButton.type = "button";
 newMessage.appendChild(removeButton);
+newMessage.appendChild(editButton);
+
+messageList.appendChild(newMessage);
+messageForm.reset();  
 
 removeButton.addEventListener('click', () => {
   newMessage.remove();
 });
-} );
-var githubRequest = new XMLHttpRequest();
+ 
+editButton.addEventListener('click', (event) => {
+  newMessage.remove();
+});
+
+
+});
+/*var githubRequest = new XMLHttpRequest();
 githubRequest.open('GET', 'https://api.github.com/users/OlgaAnokhina/repos');
-githubRequest.send();
-githubRequest.addEventListener("load", function()  {
+githubRequest.send();*/
+
+fetch('https://api.github.com/users/OlgaAnokhina/repos')
+.then(response => response.json())
+.then(repositories => {console.log(repositories) 
+//.catch(error => console.error('Error:', error));
+
+/*githubRequest.addEventListener("load", function()  {
 var repositories = JSON.parse(this.response);
-console.log(repositories);
+console.log(repositories);*/
 
 //*Display Repositories in List*//
 var projectSection = document.getElementById('projects');
@@ -56,3 +72,6 @@ for (var i = 0; i < repositories.length; i++) {
   projectList.appendChild(project);
 }
 });
+/*.catch(error) => {
+console.error('Fetch error:', error);
+}*/

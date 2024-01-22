@@ -10,68 +10,95 @@
     </head>
     
     <body>
-        <header>
-        <p ><h1>Olga Anokhina</h1></p>
-        </header>   
-        <section >
-            
-            <img src="IMG_4956.JPG" alt="olga anokhina"  title="photo from summer 2020" class="photo">
-            
-    </section>
+
+    <div class = "head1">
+        <div class = 'lineup'><img class = "image image--small image--rounded"
+              src="IMG_4956.JPG" alt="olga anokhina"  title="photo from summer 2020" class="photo">
+        </div>
+        <div class = 'lineup'><header>
+                <p ><h1>Olga Anokhina</h1></p>
+                </header>   
+            </div>
+        <div class = 'lineup'> 
+        <nav id = "navigation">
+            <ul>
+              <li><a href="#aboutTab">About</a></li>
+              <li><a href="#expirienseTab">Experience</a></li>
+              <li><a href="#skillsTop">Skills</a></li>
+              <li><a href="#profectsTop">Projects</a></li>
+              <li><a href="#connectTop">Connect</a></li>
+            </ul>
+        
+        </nav>
+    </div>
+        </div>
+               
+
         <section id="about">
-            <h1 class="p1" id="aboutTab">"About"</h1>
-           <p > DOB 18/09/1981,  move from Russia 2015, Married, have two kids, Live in Cary, NC. </p>
+            <h1 class="p1" id="aboutTab">About</h1>
+           <p id="about2"> DOB 18/09/1981,  move from Russia 2015, Married, have two kids, Live in Cary, NC. Graduated technical University with a degree in environmental engineering in 2005 in Russia.
+             Lived in Colorado-Springs CO, the first three years in USA. Became a US citizen in 2023.   </p>
        </section>
         <section >
             
-            <h1 id=expirienseTab>"Experience"</h1>
-            <p class="p1" ><ul id="experiense"> 
-                    <li>Have experience in chemical industry <a href='https://aleralabs.com/'target="_blank">AleraLab</a> </li>
-                    <li>enginer constuction projects.</li>
-                    <li>maintance HPLC.</li>
-                    <li>Have Driver Lisence.</li> 
+            <h1 class="p1" id="expirienseTab">Experience</h1>
+            <div class="expblock"> <p  ><ul id="experiense"> 
+                    <div><li class="exp">
+                        <span class="right">Lab technitian in Chemical Lab <a href='https://aleralabs.com/'target="_blank">AleraLab</a> </span>
+                        <span class="left"> 2020 - 2023</span> </li>
+                    </div>
+
+                    <div><li class="exp">
+                            <span class="right">HPLC equipment repair and maintenance, software instalation </span>
+                            <span class="left"> 2022 - 2023</span> </li>
+                    </div>
+    
+                    <div><li class="exp">
+                        <span class="right">Design engineer in the heat engineering department </span>
+                        <span class="left"> 2005 - 2010</span> </li>
+                    </div>
+
+                    
                 </ul>
-            </p>
+            </p></div>
         </section>
        
        
         <section >
-              <h2 class="p1" id="skillsTop">"Skills"</h2>
+              <h2 class="p1" id="skillsTop">Skills</h2>
               <h4 id="skills">
                 <ul > </ul>
               </h4>
         </section>
         <section id = "projects">
-            <h2> "Projects"</h2>
+            <h2 class="p1" id="profectsTop"> Projects</h2>
                 <ul > </ul>
         </section>
         <section>
-            <h1 class="p1">"Connect"</h1>
-            <p>Email olgakaika@mail.ru <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Ffind-friends%2Fbrowser%2F"target="_blank">Facebook</a> </p>
+            <h1 class="p1" id="connectTop">Connect</h1>
+            email: <a href="mailto:olgakaika@mail.ru">olgakaika@mail.ru</a> 
+            <br>
+            facebook: <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Ffind-friends%2Fbrowser%2F"target="_blank">Facebook</a> </p>
         </section>       
-        <section> <h2 class="p1">"Leave a Message"</h2>
+        <section> <h2 class="p1">Leave a Message</h2>
     <form id="leave_message">
         <label for "usersName">Name</label><br>
         <input type="text" id="usersName" name="usersName" required><br>
-        <label for "usersEmail">Email Adderss</label><br>
+        <label for "usersEmail">Email</label><br>
         <input type="email" id="usersEmail" name="usersEmail" required><br>
         <label for "usersMessage"> Message </label><br>
         <textarea name="usersMessage" id="usersMessage" required></textarea><br>
         <button id = "button" type="submit"> Submit </button>
     </form>
  </section> 
+ <section> <h2 class="p1">"Messages"</h2> </section>
+
 <section id="messages">
-    <h2 class="p1">"Messages"</h2>
-    <ul id="messages"> </ul>
+    
+    <ul>  </ul>
     
 </section> 
-<nav>
-    <ul>
-      <li><a href="#aboutTab">About</a></li>
-      <li><a href="#expirienseTab">Experience</a></li>
-      <li><a href="#skillsTop">Skills</a></li>
-    </ul>
-  </nav>
+
         <footer>
              
         </footer>
