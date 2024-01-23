@@ -60,9 +60,10 @@ fetch("https://api.github.com/users/dewi-anggraini/repos")
         const projectSection = document.getElementById('projects');
         const projectList = projectSection.querySelector('ul');
   
-        for (let i = 0; i < repositories.length; i++) {
+        for (let repo of repositories) {
+         console.log(repo);
          const project = document.createElement('li');
-         project.innerText = repositories[i].name;
+         project.innerText = repo.name;
          projectList.appendChild(project);
         }
     })
