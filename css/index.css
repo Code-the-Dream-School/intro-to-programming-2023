@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Le&display=swap');
 
 .nav {
+    /*position: sticky;  
+    top: 0;
+    left: 0;
+    height: 25px;*/
+
     background-color: black;
     padding: 2.25rem;
     text-align: center;
@@ -11,17 +17,18 @@
 .nav a {
     color: white;
     font-family: 'Caveat', cursive;
-    font-size: 25px;
+    font-size: 30px;
     padding: 40px;
 }
 
 body {
     background-color: #d7d1da;
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 17px;
-    font-weight: bolder;
+    font-family: Noto Sans Tai Le;
+    font-size: 14px;
+    font-weight: bold;
 }
+
 
 section {
     padding: 1rem;
@@ -59,15 +66,15 @@ input, textarea {
     border-radius: 5px;
 }
 
-button {
-    background-color: white;
+button, .top {
+    background-color: lavender;
     padding: 0.5rem;
     margin: 5px;
     border: 2px solid black;
     border-radius: 5px;
-    font-size: 17px; 
+    font-size: 14px; 
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Noto Sans Tai Le;
     font-weight: bolder;
 }
 
@@ -77,14 +84,19 @@ button {
 }
 
 button:hover {
-    background-color: #95b1a0;
+    background-color: lightseagreen;
 }    
 
 #messages button:hover {
-    background-color: #95b1a0;
+    background-color: lightseagreen;
 }
 
 footer {
+    /*position: fixed;
+    bottom: 0;
+    height: 80px;
+    display: block;*/
+
     background-color: black;
     color: white; 
     font-family: 'Caveat', cursive;
@@ -100,7 +112,7 @@ a {
 }
 
 a:hover {
-    background-color: #95b1a0;
+    background-color: lightseagreen;
 }
 
 
@@ -137,3 +149,14 @@ a:hover {
         font-size: 12px;
     }
 }
+
+/* Back to top button
+.top {  
+    --offset: 50px;  
+    position: sticky;
+    bottom: 20px;
+    float: right;
+    right: 10px; 
+    margin-top: calc(100vh + var(--offset));
+    z-index: 1;
+  } */
