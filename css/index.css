@@ -1,0 +1,211 @@
+
+html{ /*changing the default text color*/
+    color: af3b6e;
+    font-family: Josefin sans;    
+}
+
+html p{
+    font-size: 18px;
+}
+
+#myName{
+    font-size:75px;
+    text-align: center;
+    padding: 25;
+    color:424651
+}
+
+body{
+    background-color: #bce7fd;
+}
+
+button {
+    --c:  #229091; /* the color*/
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  } 
+
+
+#about{
+    background-color: f2d0a9;
+    padding: 6px;
+}
+
+#about h1{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+#about p{
+    margin-left: 25px;
+}
+
+
+
+
+#skills{
+    background-color: c492b1;    
+    padding: 6px;   
+}
+
+#skills h2{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+#skills ul{
+    margin-left: 50px; 
+    font-size: 18px;
+}
+
+#projects {
+    background-color:D77A61;
+    padding: 6px;
+}
+
+#projects ul{
+    margin-left: 50px; 
+    font-size: 18px;
+}
+
+#projects h1{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+
+#connect{
+    background-color: eeb4b3;
+    padding:6px;
+}
+
+#connect h1{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+#connect a{
+    margin-left: 25px;
+}
+
+#contactInfo{
+    background-color: e9d985;    
+    padding: 6px;
+    
+}
+
+
+#contactInfo h2{
+    font-size: 40;
+    color: 424651;
+}
+#name{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Josefin sans; 
+    background-color: c4cad0;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 25px;
+    box-shadow: 10px 10px;
+
+}
+
+.userName{
+    font-size: 18px;
+}
+
+#usersEmail{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Josefin sans; 
+    background-color: c4cad0;
+    border-radius: 12px;
+    padding: 15px; 
+    margin: 25px;
+    box-shadow: 10px 10px;
+
+}
+.usersEmail{
+    font-size: 18px;
+}
+
+#usersMessage{
+    font-size:18px;
+    font-weight: bold;
+    font-family: Josefin sans; 
+    background-color: c4cad0;
+    border-radius: 12px;
+    padding: 15px; 
+    margin:25px;
+    box-shadow: 10px 10px;
+
+}
+
+.usersMessage{
+    font-size: 18px; /*tried adjusting the padding and margin to raise "message" up to be centered with the message box but did not work*/
+      
+}
+
+.messageInfo{
+    font-size: 30px;
+    color: 424651;
+}
+
+
+#messages{
+    background-color: b2bd7e;    
+    padding: 50px;   
+}
+
+
+
+.submitBut{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: da667b;
+    color: white;
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .submitBut:hover {   
+    background-color: #fdcdf8;
+    color: black;
+}
+
+
+
+
+   
+
+
+
+
+
+
