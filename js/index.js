@@ -51,29 +51,29 @@ messageForm.addEventListener("submit", (event) => {
     messageList.appendChild(newMessage);
 
  });
- const githubRequest = new XMLHttpRequest();
- githubRequest.open("GET", "https://api.github.com/users/dewi-anggraini/repos");
- 
- githubRequest.send();
-
- githubRequest.addEventListener('load', function () {
-    if (githubRequest.status === 200) {
-        const repositories = JSON.parse(this.response);
-        console.log(repositories);
-
+const url = 'https://api.github.com/users/dewi-anggraini/repos';
+fetch("https://api.github.com/users/dewi-anggraini/repos")
+  .then(function(response) {
+    return response.json()
+  })
+  .then(function(repositories) {
         const projectSection = document.getElementById('projects');
-        const projectList = projectSection.querySelector('#projects ul');
-
-        for (let i = 0; i < repositories.length; i++) {
-            const project = document.createElement('li');
-            project.innerText = repositories[i].name;
-
-            projectList.appendChild(project);
+        const projectList = projectSection.querySelector('ul');
+  
+        for (let repo of repositories) {
+         console.log(repo);
+         const project = document.createElement('li');
+         project.innerText = repo.name;
+         projectList.appendChild(project);
         }
-    } else {
-        console.error('Error fetching repositories:', githubRequest.statusText);
-    }
- });
+    })
+  .catch(function(error) {
+    console.log(error);
+  });
+    
+
+ 
  
 
+ 
 
