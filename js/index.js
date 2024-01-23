@@ -60,7 +60,7 @@ messageForm[0].addEventListener('submit', (event) => {
    document.getElementById("form").reset();
 });
 
-//Ajax
+/* //Ajax
 const githubRequest = new XMLHttpRequest();
 const url = "https://api.github.com/users/tiasonora/repos";
 
@@ -80,4 +80,28 @@ githubRequest.addEventListener("load", function() {
         projectList.appendChild(repo);
     }
 
+}); */
+
+//Fetch
+const url = "https://api.github.com/users/tiasonora/repos";
+
+fetch(url)
+    .then(response => response.json())
+    .then(repos => {
+        const projectList = document.querySelector("#projects ul");
+        console.log(repos);
+
+    for (let i = 0; i < repos.length; i++) {
+        const repo = document.createElement("li");
+        const link = document.createElement("a");
+        const date = document.createElement("span");
+
+        link.innerText = repos[i].name;
+        link.href = repos[i].html_url;
+
+        repo.appendChild(link);
+        repo.appendChild(date);
+
+        projectList.appendChild(repo);
+    }
 });
