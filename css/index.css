@@ -1,0 +1,173 @@
+body {
+    background-color: bisque;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+        background-color: lightblue;
+    }
+}
+
+@media only screen and(min-width: 767px) {
+    body{
+        background-color: lightgreen;
+    }
+}
+section {
+    margin-bottom: 20px;
+}
+h1, h2, h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(55, 48, 39);;
+}
+
+nav {
+    position: sticky;
+    display: inline-block;
+    top: 10px;
+    right: 0;
+    background-color: rgb(229, 232, 232);
+    padding:0px;
+}
+
+nav ul li:last-child {
+    margin-left: 10;
+}
+
+
+ul li {
+    list-style-type: square;
+}
+
+
+/*class selectors*/
+.skills li {
+    background-color: burlywood;
+    padding: 8px;
+    margin-bottom:5px;
+}
+
+.top-skill {
+    font-weight: bold;
+    background-color: rgb(163, 126, 132);
+    color: papayawhip;
+}
+.date {
+    border: 2px solid steelblue;
+    border-radius: 12px;
+    padding: 6px;
+}
+.special {
+    text-transform: uppercase;
+    background-color: papayawhip;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color:rgb(118, 155, 242);
+    color: rgb(229, 238, 229);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+footer {
+    padding: 10px;
+    background-color: rgb(201, 192, 182);
+    color: rgb(55, 48, 39);
+    text-align: center;
+}
+
+
+/* id selectors*/
+#about {
+    background-color: rgb(218, 211, 199);
+    padding: 5px;
+    border: 3px solid rgb(200, 188, 172);
+    color: rgb(20, 14, 61);
+}
+#experience {
+    background-color: rgb(229, 234, 216);
+    padding: 5px;
+    border: 3px solid rgb(127, 105, 77);
+    color: rgb(20, 14, 61);
+}
+#Skills {
+    background-color: rgb(224, 235, 194);
+    padding: 5px;
+    border: 3px solid rgb(127, 105, 77);
+    color: rgb(20, 14, 61);
+}
+#experience {
+    display: flexbox;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    gap: 20px;
+}
+#proud {
+    font-size: 25px;
+    
+}
+
+/*class selectors*/
+.experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experience-item {
+    flex: 1 0 200px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+.leave-message-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto; 
+}
+
+.leave-message-form label,
+.leave-message-form input,
+.leave-message-form textarea,
+.leave-message-form button {
+    margin-bottom: 45px;
+}
+
+.leave-message-form input,
+.leave-message-form textarea,
+.leave-message-form button {
+    padding: 10px;
+    border-radius: none;
+    border: 1px solid #ccc;
+}
+
+.leave-message-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leave-message-form button:hover {
+    background-color: #0056b3;
+}
+
