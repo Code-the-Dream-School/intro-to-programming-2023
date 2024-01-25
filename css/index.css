@@ -1,32 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Le&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 .nav {
-    /*position: sticky;  
+    /*position: sticky;
     top: 0;
     left: 0;
-    height: 25px;*/
+    height: 10vh;*/
 
-    background-color: black;
+    width: 100vw;
+    background-color: #141204;
     padding: 2.25rem;
     text-align: center;
-    width: 100%;
     margin: -10px;
 }
 
 .nav a {
     color: white;
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
+    font-family: Caveat;
+    font-size: 25px;
     padding: 40px;
 }
 
 body {
-    background-color: #d7d1da;
+    min-height: 100%;
+    content: "";
+    display: block;
+    height: 100px;
+    background-color: #DDF8E8;
     color: black;
-    font-family: Noto Sans Tai Le;
-    font-size: 14px;
-    font-weight: bold;
+    font-family: PT Serif;
+    font-size: 15px;
 }
 
 
@@ -36,29 +39,34 @@ section {
 }
 
 h1, h2 {
-    font-family: 'Caveat', cursive;
-    font-size: 45px;
-    font-weight: bolder;
-    color: black;
+    font-family: Caveat;
+    font-size: 32px; 
+    color: #262A10;
 }
 
 li {
     display: block;
     width: 25%;
-    border: 2px solid black;
+    border: 2px solid green;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
-    background-color: white;
+    background-color: #AFE1AF;
     text-align: center;
 }
 
+#skills li {
+    width: 50%;
+}
+
 label {
-    font-size: 20px;
+    font-family: PT Serif;
+    font-size: 15px;
     color: black;
 }
 
 input, textarea {
+    font-family: PT Serif;
     font-size: 15px;
     padding: 0.5rem;
     margin: 5px;
@@ -66,16 +74,27 @@ input, textarea {
     border-radius: 5px;
 }
 
-button, .top {
-    background-color: lavender;
+button {
+    background-color: white;
     padding: 0.5rem;
     margin: 5px;
     border: 2px solid black;
     border-radius: 5px;
-    font-size: 14px; 
+    font-family: PT Serif;
+    font-size: 15px; 
+    font-weight: bold;
     color: black;
-    font-family: Noto Sans Tai Le;
-    font-weight: bolder;
+}
+
+#about p {
+    background-color: #AFE1AF;
+    padding: 0.5rem;
+    margin: 5px;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-family: PT Serif;
+    font-size: 15px; 
+    color: black; 
 }
 
 #messages button {
@@ -91,19 +110,17 @@ button:hover {
     background-color: lightseagreen;
 }
 
-footer {
-    /*position: fixed;
-    bottom: 0;
-    height: 80px;
-    display: block;*/
 
-    background-color: black;
+footer {
+    width: 100vw;
+    height: 70%; 
+    background-color: #141204;
     color: white; 
-    font-family: 'Caveat', cursive;
+    font-family: Caveat;
     font-size: 25px;
     padding: 0.5rem;
-    width: 100%;
     margin: -10px;
+    text-align: center;
 }
 
 a {
@@ -111,7 +128,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, .w-icon-github:hover {
     background-color: lightseagreen;
 }
 
@@ -136,27 +153,16 @@ a:hover {
  /* Use Media Queries */
 @media (max-width: 600px) {
     .nav a {
-        font-size: 12px;
+        font-size: 10px;
         padding: 3px;
     }
     h1, h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
     body {
         font-size: 10px;
     }
     footer {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
-
-/* Back to top button
-.top {  
-    --offset: 50px;  
-    position: sticky;
-    bottom: 20px;
-    float: right;
-    right: 10px; 
-    margin-top: calc(100vh + var(--offset));
-    z-index: 1;
-  } */
