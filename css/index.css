@@ -12,23 +12,27 @@
   
   color: #140404;
 }
-nav li {
+nav  {
+  
+
+ul li {
   display: flex;
   list-style-type: none;
   margin: 5px;
-  padding: 10px;
-  font-size:13px;
+ 
+  font-size:0 px;
   float: left;
-  
-    
+  flex-wrap: wrap;
+ 
+ 
    
-    padding: 20px 20px;
+    padding: 0px 0px;
     
     font-family: Arial, Helvetica, sans-serif;
     
     text-align: center;
-   
-  }
+}
+}
   li a:hover{
     text-decoration: underline;
     color: rgb(247, 238, 238);
@@ -51,9 +55,12 @@ nav li {
 .head1  {
   display: flex;
   font-size: 80%;
-  box-sizing: 80%;
+  box-sizing: border box;
   background-color: rgb(2, 3, 64);
   color:rgb(252, 172, 0);
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 #about2{
@@ -95,15 +102,19 @@ header h1 {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    font-size: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
     li{
     background-color: rgb(164, 190, 218);
     margin: 10px;
     color:rgb(2, 3, 64);
-    padding: 20px;
-    border: 1px solid rgb(201, 214, 218);
-    font-size: 25px;
-    border-radius:30px;
+    padding: 0.25rem 0.75rem;;
+      
+    border-radius:10px;
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 100px;
   }
     
   }
@@ -114,15 +125,23 @@ header h1 {
     color:#792424;
   }
   }*/
-
+#projects ul {
+ 
+a {
+  color:#140404
+}
+} 
   #leave_message {
     display: inline-grid;
+
     font-size: 20px;
   background-color: rgb(164, 190, 218);
   color: rgb(31, 8, 4);
   font-family: Arial, sans-serif;
-  width:30%;
+  width: 10rem;
   margin-left:0rem;
+  
+  flex-wrap: wrap;
 }
 #button {
     color: rgb(126, 71, 255);
@@ -138,6 +157,7 @@ header h1 {
     border-radius: 20px;
     font-family: Arial, sans-serif;
     display: flex;
+
     flex-direction: column;
     a {
       color: rgb(13, 6, 27);
@@ -161,6 +181,18 @@ footer {
     clear: both;
   } 
 }
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  body {
+    /* Adjust the properties for mobile devices */
+    font-size: 100%;  /* Example: Increase font size */
+    padding: 20px;    /* Example: Add padding */
+    /* You can also adjust width, height, etc., as needed */
+  }
+}
+
+
     /*position: fixed;*/
    /* left: 50px;
     height: 8%;
