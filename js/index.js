@@ -7,7 +7,7 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 
 const copyright = document.createElement("p");
-copyright.innerHTML = `Tia ${thisYear}`;
+copyright.innerHTML = `&#169; Tia Jha ${thisYear}`;
 
 footer.appendChild(copyright);
 
@@ -41,7 +41,7 @@ messageForm[0].addEventListener('submit', (event) => {
    const messageList = messageSection.querySelector("ul");
    const newMessage = document.createElement("li");
    newMessage.innerHTML = `
-    <a href="mailto:${usersEmail}">${usersName}</a>
+    <a href="mailto:${usersEmail}">${usersName}: </a>
     <span>${usersMessage}</span>
    `;
    messageList.append(newMessage);
