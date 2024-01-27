@@ -1,0 +1,92 @@
+body {
+    background-image: url("/Users/aoi/Desktop/Bianca/CDT/ganymede-intro/img/20231230_141749.jpg");
+    background-color: black;
+    color: white;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border: 5px solid white;
+    padding: 15px;
+    width: 100%;
+    max-width: 1500px;
+    box-sizing: border-box;
+    background-size:contain;
+}
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+}
+p {
+    color: white;
+}
+h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+}
+h3 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: lighter;
+}
+pre {
+    color: white;
+}
+label {
+    color: white;
+}
+.wrapper {
+    border-block-style: dotted;
+    bottom: 0px;
+}
+Label {
+    font-size: 12px;
+    color: white;
+}
+Input {
+    font-size: 12px;
+    padding: 10px;
+    border: 2px solid bisque;
+}
+Textarea {
+    font-size: 12px;
+    padding: 10px;
+    border: 2px solid bisque;
+}
+Form {
+    padding: 10px;
+}
+#Submit {
+    padding: 7px;
+    background: grey;
+    border: bisque;
+}
+Footer {
+    border-spacing: 6px;
+    background-color: darkslategray;
+}
+video {
+    margin: 0 auto;
+    display: block;
+}
+li {
+    list-style-type: none;
+}
+/* .line {
+    border-top: 1px dotted white line;
+} */
+
+/* Definition Lists */
+/* #messages dl {
+    display: list-item;
+    list-style-type: "💥";
+    padding-inline-start: 1ch;
+} */
+/* dd::before {
+    content: "🎉";
+    margin-right: 5px;
+} */
+/* #Skills {
+    color:white;
+    border-block-style: groove;
+    margin: 10px;
+} */
