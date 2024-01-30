@@ -6,15 +6,15 @@ const copyright = document.createElement("p");
 copyright.innerHTML = "Olga Anokhina" +" "+ thisYear;
 //*thisYear.appendChild(copyright);
 footer.appendChild(copyright);
-var skills = ["JavaScript", "Html", "Excel", "Word", "AutoCad"];
-var skillSection = document.getElementById("skills");
-var skillsList = skillSection.querySelector("ul");
-for (i=0; i<skills.length; i++){
-  var skill = document.createElement('li');
+const skills = ["JavaScript", "Html", "Excel", "AutoCad", "CSS"];
+const skillSection = document.getElementById("skills");
+const skillsList = skillSection.querySelector("ul");
+for (let i=0; i<skills.length; i++){
+  let skill = document.createElement('li');
   skill.innerText = skills[i];
   skillsList.appendChild(skill);
 };
-var  messageForm = document.getElementById("leave_message");
+const  messageForm = document.getElementById("leave_message");
 messageForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const usersName = e.target.usersName.value;
@@ -23,9 +23,9 @@ messageForm.addEventListener("submit", (e) => {
   
   console.log(usersName, usersEmail, usersMessage);
   
-  var messageSection = document.getElementById("messages");
-  var messageList = messageSection.querySelector("ul");
-  var newMessage = document.createElement("li");
+  let messageSection = document.getElementById("messages");
+  let messageList = messageSection.querySelector("ul");
+  let newMessage = document.createElement("li");
   newMessage.innerHTML = `<a href = "mailto:${usersEmail}">  ${usersName} </a>
   <span>wrote: ${usersMessage}</span> <p></p>` 
 const removeButton=document.createElement('button');
@@ -44,9 +44,23 @@ removeButton.addEventListener('click', () => {
   newMessage.remove();
 });
  
-editButton.addEventListener('click', (event) => {
-  newMessage.remove();
+editButton.addEventListener('click', () => {
+  if (editButton.innerText.toLowerCase() === "edit") {
+    // Make the message editable
+    const span = newMessage.querySelector('span');
+    const text = span.innerText.replace('wrote: ', '');
+    span.innerHTML = `<input type="text" value="${text}">`;
+    editButton.innerText = "save";
+  } else {
+    // Save the edited message
+    const input = newMessage.querySelector('input');
+    const newText = input.value;
+    newMessage.querySelector('span').innerText = `wrote: ${newText}`;
+    editButton.innerText = "edit";
+  }
 });
+
+
 
 
 });
@@ -55,20 +69,22 @@ githubRequest.open('GET', 'https://api.github.com/users/OlgaAnokhina/repos');
 githubRequest.send();*/
 
 fetch('https://api.github.com/users/OlgaAnokhina/repos')
-.then(response => response.json())
-.then(repositories => {console.log(repositories) 
+.then(response => { return  response.json()})
+.then(repositories => {
 //.catch(error => console.error('Error:', error));
 
 /*githubRequest.addEventListener("load", function()  {
-var repositories = JSON.parse(this.response);
-console.log(repositories);*/
+let repositories = JSON.parse(this.response);
+console.log(repositories);
 
-//*Display Repositories in List*//
-var projectSection = document.getElementById('projects');
-var projectList = projectSection.querySelector('ul');
-for (var i = 0; i < repositories.length; i++) {
-  var project = document.createElement('li');
-  project.innerText = repositories[i].name;
+//*Display Repositories in List*/
+let projectSection = document.getElementById('projects');
+let projectList = projectSection.querySelector('ul');
+for (let i = 0; i < repositories.length; i++) {
+  let project = document.createElement('li');
+
+console.log(repositories[i])
+  project.innerHTML = `<a href = "${repositories[i].html_url }" target="_blank"> ${repositories[i].name}</a>`
   projectList.appendChild(project);
 }
 });
