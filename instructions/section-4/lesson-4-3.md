@@ -48,7 +48,7 @@ Now, open the project directory in your code editor and continue to the next sec
 - [ ] Inside the `<form>` element, add the following:
   1. `<input>` element with attributes: `type` "text", `name` "usersName", and `required` true
   2. `<input>` element with attributes: `type` "email", `name` "usersEmail", and `required` true
-  3. `<textarea>` element with attributes: `name` "usersMessage" and `required` true
+  3. `<textarea>` element with attributes: `name`"usersMessage"  and `required` true
   4. `<button>` element that says "Submit" and has `type` attribute equal to "submit"
   5. Each form field should also have a corresponding `<label>` element
   6. (Optional) Use `<br>` elements to stack the form fields
